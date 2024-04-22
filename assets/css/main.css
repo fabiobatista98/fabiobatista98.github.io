@@ -2859,6 +2859,73 @@ input, select, textarea {
 
 		}
 
+/* MY Features */
+
+	.myFeatures {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		width: calc(100% + 2em);
+		margin: 0 0 3em -2em;
+		padding: 0;
+		list-style: none;
+	}
+
+		.myFeatures li {
+			width: calc(50% - 2em);
+			margin-left: 2em;
+			margin-top: 3em;
+			padding: 0;
+		}
+
+			.myFeatures li:nth-child(1), .myFeatures li:nth-child(2), .myFeatures li:nth-child(3) {
+				margin-top: 0;
+			}
+
+			.myFeatures li > :last-child {
+				margin-bottom: 0;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			.myFeatures li {
+				width: calc(50% - 2em);
+			}
+
+				.myFeatures li:nth-child(3) {
+					margin-top: 3em;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.myFeatures {
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+
+				.myFeatures li {
+					width: 100%;
+					margin-left: 0;
+					margin-top: 2em;
+				}
+
+					.myFeatures li:nth-child(2), .myFeatures li:nth-child(3) {
+						margin-top: 2em;
+					}
+
+		}
+
 /* Statistics */
 
 	.statistics {
@@ -3121,7 +3188,7 @@ input, select, textarea {
 				#header.alt .logo img {
 					display: block;
 					margin: 0 auto;
-					max-width: 75%;
+					max-width: 20%;
 				}
 
 		@media screen and (max-width: 1280px) {
