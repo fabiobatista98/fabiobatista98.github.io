@@ -3288,7 +3288,7 @@ input, select, textarea {
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #89aed9;
+		background-color: #406b99;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3373,7 +3373,7 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: #89aed9;
+			background-color: #406b99;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
