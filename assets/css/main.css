@@ -3935,3 +3935,115 @@ input, select, textarea {
 		.prev, .next,.text {font-size: 11px}
 	}
 	
+	.container {
+		display: flex;
+		gap: 20px; /* Reduzido para ajustar a largura das colunas */
+		justify-content: center;
+		padding-top: 40px;
+		flex-wrap: wrap; /* Permitir quebra de linha em telas menores */
+	}
+	
+	.column {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 20px; /* Espaçamento inferior entre colunas em telas menores */
+		flex-basis: 28%; /* Reduzido para garantir que as colunas caibam lado a lado */
+	}
+	
+	.circle {
+		width: 100px; /* Tamanho do círculo */
+		height: 100px;
+		border-radius: 50%;
+		border: 5px solid #000; /* Cor e espessura da moldura */
+		position: relative;
+		overflow: visible; /* Permitir que a imagem saia da moldura */
+	}
+	
+	.circle img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -60%); /* Centraliza a imagem e a move um pouco para cima */
+		z-index: 1; /* Garante que a imagem fique acima da moldura */
+	}
+	
+	.progress-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 15px; /* Reduzido para um ajuste mais compacto */
+	}
+	
+	.progress {
+		display: flex;
+		gap: 5px; /* Espaçamento entre os traços */
+	}
+	
+	.progress div {
+		width: 40px; /* Largura reduzida de cada traço */
+		height: 8px; /* Altura ligeiramente reduzida */
+		background-color: #e0e0e0; /* Cor dos traços não preenchidos */
+		border-radius: 5px;
+	}
+	
+	.progress div.filled {
+		background-color: #4CAF50; /* Cor dos traços preenchidos */
+	}
+	
+	.level-labels {
+		display: flex;
+		justify-content: space-between;
+		width: 240px; /* Reduzido para ajustar à nova largura dos traços */
+		font-size: 12px;
+		color: #555;
+		margin-top: 5px; /* Espaçamento entre a barra de progresso e os rótulos */
+	}
+	
+	/* Responsividade */
+	@media (max-width: 1024px) {
+		.column {
+			flex-basis: 45%; /* Ocupa 45% da largura da tela em telas médias, como tablets */
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.container {
+			gap: 20px;
+		}
+	
+		.column {
+			flex-basis: 100%; /* As colunas ocuparão 100% da largura da tela em dispositivos menores */
+		}
+	
+		.progress div {
+			width: 30px; /* Reduz a largura dos traços em telas menores */
+		}
+	
+		.level-labels {
+			width: 180px; /* Ajuste conforme o tamanho dos traços */
+		}
+	}
+	
+	@media (max-width: 480px) {
+		.circle {
+			width: 80px;
+			height: 80px;
+		}
+	
+		.progress div {
+			width: 20px; /* Reduz ainda mais a largura dos traços */
+		}
+	
+		.level-labels {
+			width: 120px; /* Ajuste conforme o tamanho dos traços */
+			font-size: 10px; /* Reduz o tamanho da fonte dos rótulos */
+		}
+	
+		.column {
+			flex-basis: 100%; /* As colunas ocuparão 100% da largura da tela em dispositivos móveis */
+		}
+	}
+	
