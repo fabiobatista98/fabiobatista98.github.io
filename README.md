@@ -86,7 +86,9 @@ Feel free to reach out if you'd like to collaborate or discuss any of my project
 To run this project locally:
 ```bash
 git clone https://github.com/fabiobatista98/portfolio.git
+```
 
+---
 
 ## 📝 **License**
 This project is licensed under the MIT License - feel free to modify and use it for personal projects!
