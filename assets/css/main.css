@@ -161,7 +161,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		/*border-bottom: dotted 1px;*/
 		color: inherit;
 	}
 
@@ -2615,6 +2615,8 @@ input, select, textarea {
 
 /* Icons */
 
+
+
 	ul.icons {
 		cursor: default;
 		list-style: none;
@@ -4047,3 +4049,16 @@ input, select, textarea {
 		}
 	}
 	
+
+	/* Social Icons Hover Colors */
+	#icons.icon.fa-linkedin:hover {
+	color: #0077b5; /* Azul LinkedIn */
+	}
+
+	#icons.icon.fa-github:hover {
+	color: #181717; /* Preto GitHub */
+	}
+
+	#icons.icon.fa-youtube:hover {
+	color: #ff0000; /* Vermelho YouTube */
+	}
